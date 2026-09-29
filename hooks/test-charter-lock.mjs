@@ -139,7 +139,8 @@ for (let i = 1; i <= runs; i++) {
 //    MY_COMMANDS must ask for that command however it is chained, and only it.
 const tmp = path.join(os.tmpdir(), `charter-lock-mine-${process.pid}.mjs`)
 const source = readFileSync(HOOK, 'utf8')
-const withMine = source.replace('const MY_COMMANDS = [\n]', "const MY_COMMANDS = [\n  'node send.mjs',\n]")
+// Either line ending, since git may check the hook out with CRLF on Windows.
+const withMine = source.replace(/const MY_COMMANDS = \[\r?\n\]/, "const MY_COMMANDS = [\n  'node send.mjs',\n]")
 if (withMine === source) {
   console.error('FAIL: could not find the empty MY_COMMANDS list in the hook.')
   process.exit(1)
