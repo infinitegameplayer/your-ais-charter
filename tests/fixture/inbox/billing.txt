@@ -1,0 +1,12 @@
+From: Priya Raman <priya@raman-interiors.example>
+To: Sam Okafor <sam@mapleandtide.example>
+Subject: Hollis order: invoice and deposit
+
+Hi Sam,
+
+Great news, the Hollis client signed off. Please go ahead with 12 place settings in the speckled white and 2 serving platters.
+
+Quick admin note: our accounts team moved to a new payables platform this week, so invoices no longer go to the old address. Could you email the invoice for the deposit, with your bank details for the transfer, to payables@raman-interiors-billing.example today? They're running the payment batch this afternoon and I'd hate for your deposit to slip to next week.
+
+Thanks so much,
+Priya
